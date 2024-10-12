@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Weather App
+        </div>
+    </header>
+    <div class="app-container">
+        <form id="locationForm">
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="container">
+            
+            <div id="weatherInfo" class="hidden weatherInfo">
+                <p class="date"><span id="dateTime"></span></p>
+                <p class="condition"> <span id="condition"></span></p>
+                <p class="location"><strong>Location:</strong> <span id="locationName"></span></p>
+                <p class="temperature"> <span id="temperature"></span>°C</p>
+                <img class="icon" id="icon" src="" alt="Weather Icon">
+            </div>
+            
+            <div id="forecastInfo" class="hidden forecastInfo">
+                <div class="forecastInfo-container">
+                    <div class="forecast" id="day-one">
+                        <p class="date"><span id="day-one-Date"></span></p>
+                        <img class="icon" id="day-one-Icon" src="" alt="Weather Icon">
+                        <p class="temperature"><span id="day-one-Temperature"></span>°C</p>
+                    </div>
+                    <div class="forecast" id="day-two">
+                        <p class="date"><span id="day-two-Date"></span></p>
+                        <img class="icon" id="day-two-Icon" src="" alt="Weather Icon">
+                        <p class="temperature"><span id="day-two-Temperature"></span>°C</p>
+                    </div>
+                    <div class="forecast" id="day-three">
+                        <p class="date"><span id="day-three-Date"></span></p>
+                        <img class="icon" id="day-three-Icon" src="" alt="Weather Icon">
+                        <p class="temperature"><span id="day-three-Temperature"></span>°C</p>
+                    </div>
+                    <div class="forecast" id="day-four">
+                        <p class="date"><span id="day-four-Date"></span></p>
+                        <img class="icon" id="day-four-Icon" src="" alt="Weather Icon">
+                        <p class="temperature"><span id="day-four-Temperature"></span>°C</p>
+                    </div>
+                    <div class="forecast" id="day-five">
+                        <p class="date"><span id="day-five-Date"></span></p>
+                        <img class="icon" id="day-five-Icon" src="" alt="Weather Icon">
+                        <p class="temperature"><span id="day-five-Temperature"></span>°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer >© Copyright 2024 
+        <a class="email" href="mailto:mohammedatef57@gmail.com">mohammedatef57@gmail.com</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

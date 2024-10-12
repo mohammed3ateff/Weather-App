@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg");
+    background-size: cover;
+}
+header{
+    padding: 15px 30px;
+    text-align: center;
+    background: #eeeeee2d;
+}
+header .logo{
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+form{
+    padding: 15px ;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+ form input {
+    padding: 7px 10px;
+    background: #eeeeee7a;
+    border: none;
+    border-radius: 10px;
+}
+     form input:focus{
+    outline: none;
+}
+form button{
+    padding: 5px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: #0f2b468f;
+    color: white;
+    cursor: pointer;
+    transition:0.3s;
+}
+form button:hover{
+    background-color: blue;
+
+}
+@media (max-width:600px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+
+    }
+    form button{
+        width: fit-content;
+    }
+}
+.app-container{
+    background: linear-gradient(to left, black, transparent);
+    flex:1;
+}
+.container{
+    color: white;
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+.container .weatherInfo .date{
+    position: absolute;
+    left: 70px;
+    font-size: 13px;
+}
+.container .weatherInfo .condition{
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 70px;
+    top: 35px;
+}
+.container .weatherInfo .icon{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+}
+.container .weatherInfo .temperature{
+    position: absolute;
+    left: 70px;
+    bottom: -23px;
+    font-size: 35px;
+    top: 167px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.container .forecastInfo{
+    position: absolute;
+    bottom: -330px;
+    left: 70px; 
+}
+.container .forecastInfo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+
+}
+.container .forecastInfo .forecast{
+    
+        background: #eee9;
+        border-radius: 31px;
+        min-height: 120px;
+        min-width: 60px;
+        max-width: 80px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+}
+
+
+
+
+@media (max-width:600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .app-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+
+        flex: 1;
+    }
+    .container .weatherInfo .date{
+        left: 15px;
+        top: 90px;
+
+    }
+    .container .weatherInfo .condition{
+        left: 15px;
+        top: 110px;
+
+    }
+    .container .weatherInfo .icon{
+        right: 0;
+        top: 44px;
+        width: 200px;
+
+    }
+    .container .weatherInfo .temperature{
+        left: 15px;
+        top: 240px;
+
+    }
+    
+    
+    .container .forecastInfo{
+        bottom: 30px;
+        left: 15px;
+
+    }
+    .container .forecastInfo-container{
+        font-size: 10px;
+        gap: 15px;
+
+    
+    }
+    .container .forecastInfo .forecast{
+        width:30px ;
+
+    }
+
+    .location{
+        display: none;
+    }
+    
+
+    
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 15px;
+    color: rgb(38 184 131);
+}
+
+footer .email{
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+footer .email:hover{
+    color: rgb(0, 255, 162);
+}
